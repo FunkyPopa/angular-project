@@ -1,5 +1,9 @@
+.wrapper {
+  display: flex;
+}
+
 .user{
-  border: black 1px solid;
   margin: 5px;
   width: 400px;
 }
+

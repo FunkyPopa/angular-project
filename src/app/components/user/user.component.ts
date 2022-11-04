@@ -15,7 +15,8 @@ export class UserComponent implements OnInit {
   @Output()
   liftUser = new EventEmitter<IUser>();
 
-  constructor(private router: Router, private activatedRoute:ActivatedRoute) { }
+  constructor(private router: Router, private activatedRoute:ActivatedRoute) {
+  }
 
   ngOnInit(): void {
   }

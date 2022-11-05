@@ -10,13 +10,11 @@ import {UserService} from "../../services";
 })
 export class UserDetailsComponent implements OnInit {
 
-  constructor(private activatedRoute:ActivatedRoute, private userService:UserService) { }
+  constructor(private activatedRoute:ActivatedRoute) { }
   user: IUser;
 
   ngOnInit(): void {
-    this.activatedRoute.params.subscribe(({id}) => {
-      this.userService.getById(id).subscribe(value => this.user = value)
-    })
+    this.activatedRoute.data.subscribe(({user}) => this.user = user)
   }
 
 }

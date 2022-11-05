@@ -5,6 +5,7 @@ import {
   ActivatedRouteSnapshot
 } from '@angular/router';
 import { Observable, of } from 'rxjs';
+
 import {UserService} from "../user.service";
 import {IUser} from "../../interfaces";
 
@@ -12,7 +13,6 @@ import {IUser} from "../../interfaces";
   providedIn: 'root'
 })
 export class UserResolver implements Resolve<IUser> {
-
   constructor(private userService:UserService) {
   }
 

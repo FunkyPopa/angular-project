@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from "@angular/router";
 
 import {IPost} from "../../interfaces";
-import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-post',
@@ -17,7 +17,7 @@ export class PostComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getDetails() {
+  getDetails(): void{
     this.router.navigate([this.post.id], {
       relativeTo: this.activatedRoute
     })

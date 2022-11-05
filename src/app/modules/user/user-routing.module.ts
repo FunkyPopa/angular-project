@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import {UsersComponent} from "./components/users/users.component";
 import {UserDetailsComponent} from "./components/user-details/user-details.component";
-import {UserResolver, UsersResolver} from "./services/resolvers";
+import {UserResolver, UsersResolver} from "./services";
 
 
 const routes: Routes = [
